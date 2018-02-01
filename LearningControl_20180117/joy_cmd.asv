@@ -1,0 +1,19 @@
+% Created on: January 20, 2018
+% Created By: Jeovanny Reyes
+% Robotics Research Lab
+
+% Joystick command inputs to the system. Contains linear velocity and
+
+% Outputs: Time sample (k), Linar velocity (lin_vel) and Angular Velocity (
+
+function yout = joy_cmd(~,~)
+% Determine how to input linear and angular velocities. Maybe using for
+% loop
+
+k = 0:0.01:100; % Time sample.
+%ele = size(k);
+
+l = 0:0.01:100; % Linear velocity increments
+r = 0:0.01:100; % Angular velocity increments 
+yout = [l;r;k];
+end
